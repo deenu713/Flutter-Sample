@@ -14,4 +14,6 @@ jobs:
         channel: 'stable'
     - name: Running Flutter
       run: flutter --version
+      run: flutter doctor
+      run:pwd && ls
     
