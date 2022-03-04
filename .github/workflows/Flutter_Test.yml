@@ -13,6 +13,11 @@ jobs:
         flutter-version: '2.10.3'
         channel: 'stable'
     - name: Running Flutter
-      run: flutter --version && flutter doctor && pwd && ls
+      run: flutter create com.flu.uk UkFlu 
+     - name: Uploading Folder and Files
+        uses: actions/upload-artifact@v2
+        with:
+          name: All
+          path: pwd
       
     
