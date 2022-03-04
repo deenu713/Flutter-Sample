@@ -13,7 +13,6 @@ jobs:
         flutter-version: '2.10.3'
         channel: 'stable'
     - name: Running Flutter
-      run: flutter --version
-      run: flutter doctor
-      run: pwd && ls
+      run: flutter --version && flutter doctor && pwd && ls
+      
     
