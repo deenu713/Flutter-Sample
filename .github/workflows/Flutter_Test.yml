@@ -13,7 +13,7 @@ jobs:
         flutter-version: '2.10.3'
         channel: 'stable'
     - name: Running Flutter
-      run: flutter create UkFlu 
+      run: flutter create --org com.uk.flu UkFlu 
     - name: Uploading Folder and Files
       uses: actions/upload-artifact@v2
       with:
