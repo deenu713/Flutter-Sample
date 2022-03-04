@@ -5,14 +5,13 @@ jobs:
     name: Testing Flutter
     runs-on: ubuntu-latest
     steps:
-    
+    - uses: actions/checkout@v2
 
     - name: Installing Flutter
-    - uses: actions/checkout@v2
-    - uses: subosito/flutter-action@v2
+      uses: subosito/flutter-action@v2
       with:
         flutter-version: '2.8.0'
         channel: 'stable'
     - name: Running Flutter
-    - run: flutter --version
+      run: flutter --version
     
