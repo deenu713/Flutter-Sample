@@ -14,10 +14,10 @@ jobs:
         channel: 'stable'
     - name: Running Flutter
       run: flutter create com.flu.uk UkFlu 
-     - name: Uploading Folder and Files
-        uses: actions/upload-artifact@v2
-        with:
-          name: All
-          path: pwd
+    - name: Uploading Folder and Files
+      uses: actions/upload-artifact@v2
+      with:
+        name: All
+        path: pwd
       
     
