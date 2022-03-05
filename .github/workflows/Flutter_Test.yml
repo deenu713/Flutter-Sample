@@ -22,7 +22,7 @@ jobs:
       continue-on-error: true
       run: cd uk_flu &&
            flutter pub get &&
-           flutter test &&
+           cd android &&
            flutter build apk &&
            flutter build appbundle
     - name: Uploading Folder and Files
