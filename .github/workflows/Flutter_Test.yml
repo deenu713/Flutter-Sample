@@ -19,10 +19,10 @@ jobs:
     - name: Running Flutter
       run: flutter create uk_flu 
     - name: Building App
-      run: cd uk_flu
-           flutter pub get
-           flutter test
-           flutter build apk
+      run: cd uk_flu &&
+           flutter pub get &&
+           flutter test &&
+           flutter build apk &&
            flutter build appbundle
     - name: Uploading Folder and Files
       uses: actions/upload-artifact@v2
