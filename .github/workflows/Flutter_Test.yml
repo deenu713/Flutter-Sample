@@ -15,7 +15,7 @@ jobs:
     - name: Running Flutter
       run: flutter create uk_flu 
     - name: Building App
-       run: flutter pub get
+      run: flutter pub get
             flutter test
             flutter build apk
             flutter build appbundle
