@@ -20,14 +20,17 @@ jobs:
       run: flutter create uk_flu 
     - name: Building App
       continue-on-error: true
-      run: cd uk_flu &&
-           flutter pub get &&
-           flutter build apk &&
-           flutter build appbundle
+      run: 
+       - cd uk_flu 
+       - flutter pub get 
+       - flutter build apk 
+       - flutter build appbundle
     - name: Uploading Folder and Files
       uses: actions/upload-artifact@v3
       with:
         name: All
-        path: uk_flu/android/build/app/outputs
+        path: 
+          - uk_flu/android/build/app/outputs/flutter-apk
+          - uk_flu/android/build/app/outputs/bundle/release/
       
     
