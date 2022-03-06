@@ -28,6 +28,6 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: All
-        path: /home/runner/work/Flutter-Sample/Flutter-Sample/
+        path: uk_flu/android/build/app/outputs
       
     
