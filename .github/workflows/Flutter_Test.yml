@@ -30,7 +30,7 @@ jobs:
       with:
         name: All
         path: |
-            android/build/app/outputs/flutter-apk
-            android/build/app/outputs/bundle/release
+            android/app/build/app/outputs/flutter-apk
+            android/app/build/app/outputs/bundle/release
       
     
