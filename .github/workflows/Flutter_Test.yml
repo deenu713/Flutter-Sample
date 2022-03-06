@@ -26,11 +26,11 @@ jobs:
          flutter build apk 
          flutter build appbundle
     - name: Uploading Folder and Files
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v2
       with:
         name: All
         path: |
-            uk_flu/android/build/app/outputs/flutter-apk
-            uk_flu/android/build/app/outputs/bundle/release/
+            android/build/app/outputs/flutter-apk
+            android/build/app/outputs/bundle/release
       
     
