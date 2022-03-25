@@ -24,13 +24,13 @@ jobs:
          cd uk_flu 
          flutter pub get 
          flutter build apk 
-         flutter build appbundle
+       //  flutter build appbundle
     - name: Uploading Folder and Files
       uses: actions/upload-artifact@v2
       with:
         name: All
         path: |
             uk_flu/build/app/outputs/flutter-apk
-            uk_flu/build/app/outputs/bundle/release
+            //uk_flu/build/app/outputs/bundle/release
       
     
