@@ -1,4 +1,4 @@
-name: Flutter Test
+name: Upload Flutter Project
 on: workflow_dispatch
 jobs:
   build:
